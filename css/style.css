@@ -1,0 +1,83 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Noto Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.header {
+  background-image: url("/images/header-bg.jpg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  padding-top: 70px;
+  padding: 70px 10px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header__subtitle {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 300;
+  margin-top: auto;
+}
+
+.header__title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 87px;
+}
+
+.header__title span {
+  font-size: 42px;
+  display: block;
+  line-height: 57px;
+}
+
+.header__button {
+  margin-bottom: auto;
+  margin-top: 50px;
+}
+
+.button__path {
+  transition: fill 0.5s;
+}
+
+.button__text {
+  font-size: 18px;
+  line-height: 25px;
+  display: inline-block;
+  transform: translate(-50px, -22px);
+}
+
+a svg:hover .button__path {
+  fill: #a9a32a;
+}
+
+.social {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
