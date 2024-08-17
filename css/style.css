@@ -69,6 +69,7 @@ body {
 .header__button {
   margin-bottom: auto;
   margin-top: 50px;
+  align-self: center;
 }
 
 .button__path {
@@ -127,4 +128,45 @@ a svg:hover .button__path {
 .services__box-text {
   color: #303030;
   line-height: 1.8;
+}
+
+.info__inner {
+  display: flex;
+}
+
+.info__box {
+  flex-basis: 510px;
+  margin-right: 90px;
+}
+
+.info__content {
+  flex-basis: 600px;
+}
+
+.info__content-text {
+  margin-bottom: 17px;
+  color: #303030;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+}
+
+.info-tabs {
+  margin-bottom: 100px;
+}
+
+.info-tabs__items {
+  margin-bottom: 120px;
+}
+
+.info-tabs__item--active {
+  border-bottom: 1px solid #303030;
+}
+
+.info-tabs__content {
+  display: none;
+}
+
+.info-tabs__content--active {
+  display: block;
 }
