@@ -158,6 +158,11 @@ a svg:hover .button__path {
 .info-tabs__items {
   margin-bottom: 120px;
 }
+.info-tabs__item {
+  font-size: 18px;
+  line-height: 25px;
+  margin-right: 40px;
+}
 
 .info-tabs__item--active {
   border-bottom: 1px solid #303030;
@@ -169,4 +174,67 @@ a svg:hover .button__path {
 
 .info-tabs__content--active {
   display: block;
+}
+
+.info-slider {
+  max-width: 510px;
+}
+
+.info-slider__img {
+  margin-right: 40px;
+  float: left;
+}
+
+.arrow-left {
+  position: absolute;
+  left: 270px;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.arrow-right {
+  position: absolute;
+  left: 340px;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.info__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.info__list-item {
+  flex-basis: 235px;
+  margin-bottom: 15px;
+}
+
+.info__list-title {
+  margin-bottom: 5px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 700;
+}
+
+.info-slider__text {
+  line-height: 25px;
+}
+
+/* .arrow-left:hover {
+  fill: #a9a32a;
+} */
+
+.blockquote {
+  background-image: url("/images/blockquote.jpg");
+  padding: 135px 10px;
+}
+
+.blockquote__text {
+  font-size: 42px;
+  line-height: 57px;
+  text-align: center;
+  color: #ffffff;
+  max-width: 643px;
+  margin: 0 auto;
 }
