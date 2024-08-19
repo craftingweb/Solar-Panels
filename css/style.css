@@ -190,6 +190,7 @@ a svg:hover .button__path {
   left: 270px;
   bottom: 0;
   cursor: pointer;
+  z-index: 1;
 }
 
 .arrow-right {
@@ -221,9 +222,15 @@ a svg:hover .button__path {
   line-height: 25px;
 }
 
-/* .arrow-left:hover {
+.arrow-left:hover path,
+.arrow-right:hover path {
   fill: #a9a32a;
-} */
+}
+
+.arrow-left path,
+.arrow-right path {
+  transition: fill 0.5s;
+}
 
 .blockquote {
   background-image: url("/images/blockquote.jpg");
@@ -237,4 +244,35 @@ a svg:hover .button__path {
   color: #ffffff;
   max-width: 643px;
   margin: 0 auto;
+}
+
+.clients {
+  margin-top: 150px;
+}
+
+.clients-slider__box {
+  display: flex;
+}
+
+.clients-slider__box-img {
+  margin-right: 91px;
+  margin-bottom: 30px;
+}
+
+.clients-slider__box-title {
+  color: var(--, #303030);
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  max-width: 468px;
+  line-height: 25px;
+}
+
+.clients-slider__box-list {
+  margin-left: 50px;
+  margin-bottom: 65px;
+}
+
+.clients-slider__box-item {
+  margin-bottom: 15px;
 }
