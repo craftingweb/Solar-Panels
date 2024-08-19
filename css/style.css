@@ -10,7 +10,7 @@ a {
   color: inherit;
 }
 
-li {
+ul {
   list-style: none;
 }
 
@@ -276,3 +276,49 @@ a svg:hover .button__path {
 .clients-slider__box-item {
   margin-bottom: 15px;
 }
+
+.step__inner {
+  display: flex;
+}
+
+.step__content {
+  max-width: 510px;
+  margin-right: 90px;
+}
+
+.step__list {
+  list-style-type: none;
+}
+
+.step__item {
+  counter-increment: number;
+  margin-bottom: 30px;
+}
+
+.step__item::before {
+  content: "0" counter(number);
+}
+.step__item:nth-child(n + 10)::before {
+  content: counter(number);
+}
+
+.step__item-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 2px;
+  margin-top: 11px;
+}
+
+.step__item-text {
+}
+
+/* .step__item {
+  padding-left: 25px;
+  position: relative;
+} */
+
+/* ol li::before {
+  content: "0";
+  position: absolute;
+  left: 0;
+} */
