@@ -297,9 +297,7 @@ a svg:hover .button__path {
 
 .step__item::before {
   content: "0" counter(number);
-}
-.step__item:nth-child(n + 10)::before {
-  content: counter(number);
+  color: #868585;
 }
 
 .step__item-title {
@@ -309,16 +307,80 @@ a svg:hover .button__path {
   margin-top: 11px;
 }
 
-.step__item-text {
+.footer {
+  padding: 70px 0 50px;
+  color: white;
+  background-image: url("/images/footer.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-/* .step__item {
-  padding-left: 25px;
-  position: relative;
-} */
+.footer__top {
+  margin-bottom: 150px;
+  display: flex;
+}
 
-/* ol li::before {
-  content: "0";
-  position: absolute;
-  left: 0;
-} */
+.form {
+  margin-right: 90px;
+  /* display: flex;
+  flex-direction: column; */
+  flex-basis: 510px;
+}
+
+.footer__input {
+  width: 100%;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #fff;
+  color: var(--, #fff);
+  font-family: "Noto Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: block;
+  margin-bottom: 60px;
+  padding-bottom: 11px;
+}
+
+.footer__input::placeholder {
+  color: #fff;
+  font-family: "Noto Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer-btn {
+  background: transparent;
+  outline: none;
+  border: none;
+  color: white;
+}
+
+.footer-btn:hover path {
+  fill: #a9a32a;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__contacts-title,
+.footer__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 43px;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+}
+
+.footer__contacts-item {
+  line-height: 25px;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
