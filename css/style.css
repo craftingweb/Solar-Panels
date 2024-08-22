@@ -385,7 +385,21 @@ a svg:hover .button__path {
   margin-bottom: 30px;
 }
 
+@media (max-width: 1240px) {
+  .info {
+    display: none;
+  }
+}
+
 @media (max-width: 1024px) {
+  .step__content {
+    max-width: 100%;
+    margin-right: 0;
+    text-align: center;
+  }
+  .step__img {
+    display: none;
+  }
   .services__inner {
     flex-wrap: wrap;
   }
@@ -396,6 +410,30 @@ a svg:hover .button__path {
   .services__content {
     margin-right: 0;
     flex-basis: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .clients {
+    display: none;
+  }
+  .step__content {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 700px) {
+  .form {
+    margin-right: 0;
+    flex-basis: 100%;
+  }
+  .footer__contacts {
+    display: none;
+  }
+  .footer__bottom {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
   }
 }
 @media (max-width: 450px) {
